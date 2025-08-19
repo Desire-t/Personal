@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal</title>
+        <style>
+            .nav-link {
+    padding: 5px;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;   /* removes underline */
+    transition: all 0.3s;
+}
+.nav-link:hover {
+    transform: scale(1.12);
+    border-bottom: 1px solid rgb(247, 19, 19);
+}
+
+            html {
+    scroll-behavior: smooth;
+}
+
+            main{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                box-shadow: 4px 4px 4px 4px; padding: 3px;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background-color: chartreuse;
+            }
+            .About{
+                border: 1px solid;
+                padding: 5px;
+                border-radius: 3px;
+                background-color: rgb(0, 0, 0);
+                color: aliceblue;
+                transition: all 1s;
+            }
+            .About:hover{
+                transform: scale(1.1);
+            }
+            .skills{
+                border: 1px solid;
+                padding: 5px;
+                background-color: bisque;
+                transition: all 1s;
+                border-radius: 4px;
+
+            }
+            .skills:hover{
+                transform: scale(1.1);
+            }
+
+            .contact{
+                border: 1px solid;
+                background-color: cadetblue;
+                padding: 5px;
+                transition: all 1s;
+                border-radius: 4px;
+                
+            }
+            .contact:hover{
+                transform: scale(1.05);
+            }
+            .contact nav{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+            @media (max-width: 760px){
+                .About, .contact, .skills{
+                    max-width: 600px;
+                   
+                }
+                main{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    padding: 13px;
+                }
+                .About:hover, .contact:hover, .skills:hover{
+                    max-width: 320px;
+                    
+                }
+            }
+            .nav-button {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                margin: auto;
+            }
+       
+            .nav-button button:hover{
+                transform: scale(1.12);
+                border-bottom: 1px solid rgb(247, 19, 19);
+            }
+  img{
+    border-radius: 114px;
+  }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-button">
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                
+            </nav>
+            
+        </header>
+        <main>
+            <section class="About" id="about">
+                <h1>About Me</h1>
+                <img src="1749885940074.jpg" alt="My Picture" width="130px">
+                <p>MY name is Tataw Desire Tambe I'm a <span style="color: red;">Software enginerr</span></p>
+                <p>In Cameroon</p>
+
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <p>I am Experienced in what i do, </p>
+                <p>I have a Worked for....</p>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Contact</h2>
+                <p>You can Contact me using the following</p>
+                <nav>
+                    <a href="https://wa.me/237674957771">WhatSapp</a>
+                    <a href="tel:+237674957771">Tell: <span style="color: red;">674957771</span></a>
+                </nav>
+            </section>
+        </main>
+    </body>
+</html>
